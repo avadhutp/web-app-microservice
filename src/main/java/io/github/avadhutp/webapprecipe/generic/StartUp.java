@@ -26,6 +26,7 @@ public class StartUp {
 
     public static void main(String[] args) {
         try {
+
             Server server = new Server(PORT);
 
             ServletContextHandler servletContextHandler = new ServletContextHandler(ServletContextHandler.SESSIONS);
@@ -41,7 +42,6 @@ public class StartUp {
             handlerList.setHandlers(handlers);
 
             server.setHandler(handlerList);
-
             server.start();
             server.join();
         } catch (Exception e) {

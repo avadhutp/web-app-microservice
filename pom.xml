@@ -8,9 +8,11 @@
 	<name>WebApp Microservice Recipe</name>
 
 	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<target.jdk.version>1.7</target.jdk.version>
 		<guice.version>3.0</guice.version>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<jersey.version>1.18.1</jersey.version>
+		<resteasy.version>3.0.10.Final</resteasy.version>
 	</properties>
 
 	<repositories>
@@ -40,6 +42,36 @@
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
 			<version>3.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jboss.resteasy</groupId>
+			<artifactId>resteasy-guice</artifactId>
+			<version>${resteasy.version}</version>
+		</dependency>
+		<dependency>
+	            <groupId>com.sun.jersey</groupId>
+	            <artifactId>jersey-server</artifactId>
+	            <version>${jersey.version}</version>
+	        </dependency>
+	        <dependency>
+	            <groupId>com.sun.jersey</groupId>
+	            <artifactId>jersey-json</artifactId>
+	            <version>${jersey.version}</version>
+	        </dependency>
+	        <dependency>
+	            <groupId>com.sun.jersey.contribs</groupId>
+	            <artifactId>jersey-multipart</artifactId>
+	            <version>${jersey.version}</version>
+	        </dependency>
+	        <dependency>
+	            <groupId>com.sun.jersey.contribs</groupId>
+	            <artifactId>jersey-guice</artifactId>
+	            <version>${jersey.version}</version>
+	        </dependency>
+		<dependency>
+			<groupId>com.owlike</groupId>
+			<artifactId>genson</artifactId>
+			<version>0.99</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.commons</groupId>

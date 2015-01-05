@@ -14,7 +14,10 @@ public class GuiceGlue extends GuiceServletContextListener {
 
     @Override
     protected Injector getInjector() {
-        return Guice.createInjector(new Module[] { new ControllerWiring() });
+        return Guice.createInjector(new Module[] {
+                new ResteasyWiring(),
+                new ControllerWiring()
+        });
     }
 
 }

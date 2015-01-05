@@ -1,7 +1,8 @@
 package io.github.avadhutp.webapprecipe.generic.di;
 
-import io.github.avadhutp.webapprecipe.generic.DefaultController;
+import io.github.avadhutp.webapprecipe.generic.controllers.SampleController;
 
+import com.google.inject.Singleton;
 import com.google.inject.servlet.ServletModule;
 
 /**
@@ -18,7 +19,8 @@ public class ControllerWiring extends ServletModule {
      */
     @Override
     protected void configureServlets() {
-        serve("/").with(DefaultController.class);
-    }
+        bind(SampleController.class).in(Singleton.class);
 
+        serve("/default").with(SampleController.class);
+    }
 }

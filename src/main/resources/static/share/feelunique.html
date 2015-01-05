@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    <meta property="og:title" name="title" content="Take the Some Kind of Beautiful quiz from Feel Unique" />
+    <meta property="og:description" name="description" content="Define your style with this beauty quiz from FeelUnique:" />
+    <meta property="og:url" name="url" content="https://you.visualdna.com/share/feelunique.html" />
+    <meta property="og:image" name="image" content="https://you.visualdna.com/share/feelunique_general_share.jpg" />
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="FeelUnique's Some Kind of Beautiful quiz">
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@feelunique">
+	<meta name="twitter:title" content="Take the Some Kind of Beautiful quiz from Feel Unique">
+	<meta name="twitter:description" content="Define your style with this beauty quiz from FeelUnique">
+	<meta name="twitter:image:src" content="https://you.visualdna.com/share/feelunique_general_share.jpg">
+	<meta name="twitter:url" content="https://you.visualdna.com/share/feelunique.html">
+
+    <script type="text/javascript">
+       // VisualDNA Audience Analytics API Import
+        (function() {
+             var s, e;
+             s = document.createElement("script"); s.src = "http://a1.vdna-assets.com/analytics.js";
+             s.async = true;
+             e = document.getElementsByTagName("head")[0];
+             e.insertBefore(s, e.firstChild);
+             window.VDNA = window.VDNA || {};
+             window.VDNA.queue = window.VDNA.queue || [];
+        })();
+
+        function getQueryStringParam (key) {
+            return decodeURI(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + encodeURI(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
+        }
+
+        // Google Universal Analytics Import
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-940285-26', 'auto');
+        ga(
+            'send',
+            'event',
+            getQueryStringParam('c') + '-' + window.location.pathname.split( '/' )[2],
+            'MetaTagsShare',
+            'Meta Tags Share (og: / twitter:)'
+        );
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+    var redirect = function() {
+	    if (window.ga && window.VDNA && window.VDNA.queue) {
+	        var target = "https://you.visualdna.com/quiz/feelunique?c="+getQueryStringParam('c');
+	        target = (getQueryStringParam('fuid'))?(target + "&fuid=" + getQueryStringParam('fuid')):(target);
+	        top.location.href = target;
+	    }
+    }
+    setInterval(redirect, 500);    
+    </script>
+</body>
+</html>
+
